@@ -17,7 +17,7 @@ https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1
 
 ---
 
-![variants.png]()
+![variants.png](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/variants_slices.png)
 
 - Due to limited computer resources we will be considering only 3 imaging variants for input **(flare, t1ce, t2)**.
 - Also t1 image variant has the least contrast around the tumor.
@@ -31,6 +31,7 @@ https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1
 > **(flare + t1ce + t2) = merged.npy** `shape:(128, 128, 128, 3)`
 
 ### 2. Training
+![unet](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/unet_arch.png)
 **UNet architecture**           
 1. First sight, it has a “U” shape. The architecture is symmetric and consists of two major parts — the left part is called contracting path, which is constituted by the general convolutional process; the right part is expansive path, which is constituted by transposed 2d convolutional layers.
 2. The U-Net architecture is commonly used for brain tumor segmentation because it has proven to be effective in handling semantic segmentation tasks, where the goal is to classify each pixel in an image into different categories.
@@ -47,11 +48,19 @@ https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1
 - The model accuracy has come up to be ~98%.
 
 
-### 3. Plotting accuracy and loss graphs
+### 3. Accuracy and loss graphs
+![train_val_accurac](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/train_val_accuracy.png)
 
-### 5. Load the model and predict the results
+![train_val_loss](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/train_val_loss.png)
+
+### 5. Some predicted results:
+![p1](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/prediction1.png)
+![p2](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/prediction2.png)
+![p3](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/prediction3.png)
 
 ### References
 1. https://towardsdatascience.com/unet-line-by-line-explanation-9b191c76baf5
 2. https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1
 3. https://github.com/bnsreenu/python_for_microscopists
+4. https://www.ibm.com/topics/convolutional-neural-networks
+5. https://www.analyticsvidhya.com/blog/2022/10/image-segmentation-with-u-net/
