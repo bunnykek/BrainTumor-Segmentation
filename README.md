@@ -1,5 +1,8 @@
 # BrainTumor-Segmentation
 ![title](https://github.com/bunnykek/BrainTumor-Segmentation/blob/main/assets/prediction4.png)
+
+[![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/bunnykek/BrainTumor-Segmentation/blob/main/BrainTumorSegmentationNotebook.ipynb)
+
 ### 0. Dataset
 **The dataset has been sourced from The BRATS 2021 (Brain Tumor Segmentation) contest.**
 https://www.kaggle.com/datasets/dschettler8845/brats-2021-task1
