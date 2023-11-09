@@ -1,0 +1,5 @@
+matplotlib==3.6.3
+nibabel==5.1.0
+numpy==1.23.5
+scikit_learn==1.2.2
+segmentation_models_3D==1.0.4
